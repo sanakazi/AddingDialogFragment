@@ -9,9 +9,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
-/**
- * Created by Fiticket on 07/10/15.
- */
+
 public class ReferralDialogFragment extends DialogFragment {
     private static final String REFERRAL_CODE ="REFERRAL_CODE" ;
     private static final String REFERRER_MESSAGE ="REFERRER_MESSAGE" ;
@@ -26,7 +24,7 @@ public class ReferralDialogFragment extends DialogFragment {
     public static ReferralDialogFragment newInstance(String referralCode, String referrerMessage, String referredMessage) {
         ReferralDialogFragment f = new ReferralDialogFragment();
 
-        // Supply num input as an argument.
+
         Bundle args = new Bundle();
         args.putString(REFERRAL_CODE,referralCode);
         args.putString(REFERRER_MESSAGE,referrerMessage);
